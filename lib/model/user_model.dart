@@ -2,8 +2,8 @@ class User{
   String? KullaniciKodu;
   String? Sifre;
   DateTime? DogumTarihi;
-  String? Isim;
+  String Isim='Fuat Atçeken';
 
-  User({required this.KullaniciKodu,required this.DogumTarihi,required this.Sifre,this.Isim});
+  User({ this.KullaniciKodu, this.DogumTarihi, this.Sifre});
   
 }

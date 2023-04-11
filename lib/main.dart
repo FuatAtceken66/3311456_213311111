@@ -1,67 +1,21 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
+import 'package:okulproje/view/giris_view.dart';
 
 void main() {
-  runApp(const BenimUyg());
+  runApp(const MyWidget());
 }
 
-
-
-
-
-
-class BenimUyg extends StatelessWidget {
-  const BenimUyg({Key? key}) : super(key: key);
+class MyWidget extends StatelessWidget {
+  const MyWidget({super.key});
 
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-         home: Scaffold(      
-          appBar: AppBar(
-            title: const Center(child: Text("Burç Yorumları")),
-            centerTitle: true,
-            /*actions: <Widget>[IconButton(icon: Icons(Icons.notifications),
-            onPressed: () {},)],*/
-            backgroundColor: Colors.orangeAccent,
-             leading: IconButton(onPressed: () {
-               
-             },
-              icon: const Icon(Icons.menu),),
-              /*shape: const RaundedRectangleBorder(BorderRadius:BorderRadius.only(bottomLeft: Radius.circular(25),bottomRight: Radius.circular(25),
-              ),
-              ),*/
-             ),
-          body: 
-           Center(
-             child:Column(mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-             ElevatedButton(
-              onPressed: () {},
-              child: const Text(
-                "Günlük Burç Yorumu İçin Tıkla",
-                style: TextStyle(
-                    fontSize: 20,
-                    color: Colors.black,
-                    fontWeight: FontWeight.w400),
-              ),
-            ),    
-             ElevatedButton(               
-              onPressed: () {},
-              child: const Text(
-                "Günlük Tarot Falı İçin Tıkla",
-                style: TextStyle(
-                    fontSize: 20,
-                    color: Colors.black,
-                    fontWeight: FontWeight.w400),
-              ),
-            ),
-            ]
-           ),
-      ),
-      ),
+      theme: ThemeData(fontFamily: GoogleFonts.poppins().fontFamily),
+      debugShowCheckedModeBanner: false,
+      title: 'Burç Uygulması',
+      home: GirisView(),
     );
   }
 }
-
-
-
-
