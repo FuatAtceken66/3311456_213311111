@@ -1,0 +1,28 @@
+^C:\FUAT\FLUTTER\PROJE\OKULPROJE\BUILD\WINDOWS\CMAKEFILES\18CC3B329C849DFC9C6DEA97FBC17081\FLUTTER_WINDOWS.DLL.RULE
+setlocal
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E env FLUTTER_ROOT=C:\src\flutter PROJECT_DIR=C:\Fuat\Flutter\PROJE\okulproje FLUTTER_ROOT=C:\src\flutter FLUTTER_EPHEMERAL_DIR=C:\Fuat\Flutter\PROJE\okulproje\windows\flutter\ephemeral PROJECT_DIR=C:\Fuat\Flutter\PROJE\okulproje FLUTTER_TARGET=C:\Fuat\Flutter\PROJE\okulproje\lib\main.dart DART_DEFINES=RkxVVFRFUl9XRUJfQVVUT19ERVRFQ1Q9dHJ1ZQ== DART_OBFUSCATION=false TRACK_WIDGET_CREATION=true TREE_SHAKE_ICONS=false PACKAGE_CONFIG=C:\Fuat\Flutter\PROJE\okulproje\.dart_tool\package_config.json C:/src/flutter/packages/flutter_tools/bin/tool_backend.bat windows-x64 Debug
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\FUAT\FLUTTER\PROJE\OKULPROJE\BUILD\WINDOWS\CMAKEFILES\EFDB3F9D847E8861658A16468A44F5E9\FLUTTER_ASSEMBLE.RULE
+setlocal
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\FUAT\FLUTTER\PROJE\OKULPROJE\WINDOWS\FLUTTER\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SC:/Fuat/Flutter/PROJE/okulproje/windows -BC:/Fuat/Flutter/PROJE/okulproje/build/windows --check-stamp-file C:/Fuat/Flutter/PROJE/okulproje/build/windows/flutter/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
