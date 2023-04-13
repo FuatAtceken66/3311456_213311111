@@ -15,22 +15,22 @@ class _AcilisViewState extends State<AcilisView> {
       body: PageView(
         children: const [
           _AcilisPage(
-            title: "Günlük Burç Yorumlarını İncele",
-            subtitle: "Uzman yorumcuların yorumlarına oturduğun yerden eriş",
+            title: "Burçların Genel Özellikleri",
+            subtitle: "Uzman yorumcuların yorumlarına oturduğun yerden erişip öğrenebilirsin",
             imagePath:
                 "https://img.freepik.com/free-photo/horoscope-astrology-collage_23-2150324491.jpg?size=626&ext=jpg",
           ),
           _AcilisPage(
             title: "Günlük Burç Yorumlarını İncele",
-            subtitle: "Uzman yorumcuların yorumlarına oturduğun yerden eriş",
+            subtitle: "Artık günlük burç yorumlarını öğrenmen bir tık uzağında",
             imagePath:
-                'https://img.freepik.com/free-photo/horoscope-astrology-collage_23-2150324491.jpg?size=626&ext=jpg',
+                'https://img.freepik.com/premium-photo/zodiac-signs-horoscope-background-concept-fantasy-mystery_521059-7702.jpg?size=626&ext=jpg',
           ),
              _AcilisPage(
             title: "Günlük Burç Yorumlarını İncele",
             subtitle: "Uzman yorumcuların yorumlarına oturduğun yerden eriş",
             imagePath:
-                'https://img.freepik.com/free-photo/horoscope-astrology-collage_23-2150324491.jpg?size=626&ext=jpg',
+                'https://img.freepik.com/premium-vector/illustration-lined-art-mystic-background-phone-wallpaper_769955-686.jpg?w=740',
                 isButonActive: true,
           ),
         ],
@@ -75,7 +75,7 @@ class _AcilisPage extends StatelessWidget {
                 title: Text(
                   title,
                   textAlign: TextAlign.center,
-                  style: const TextStyle(color: Colors.white, fontSize: 50),
+                  style: const TextStyle(color: Color.fromARGB(255, 221, 214, 214), fontSize: 30),
                 ),
                 subtitle: Padding(
                   padding: const EdgeInsets.all(20.0),
