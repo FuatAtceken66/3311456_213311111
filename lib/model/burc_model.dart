@@ -2,9 +2,9 @@ class Burc {
  String? BurcAdi;
  DateTime? BasTarih;
  DateTime? BitTarih;
- String? GunlukFal;
- String? GunlukTarotFal;
+ String? GunlukYorum;
+ String? BurcGenelOzellik;
  String BurcResmi='assets/image/aslan.png';
 
- Burc({required this.BurcAdi,required this.BurcResmi,required this.GunlukFal,required this.GunlukTarotFal,required this.BasTarih,required this.BitTarih});
+ Burc({required this.BurcAdi,required this.BurcResmi,required this.GunlukYorum,required this.BurcGenelOzellik,required this.BasTarih,required this.BitTarih});
 }

@@ -17,7 +17,6 @@ class _GirisViewState extends State<GirisView> {
   @override
   Widget build(BuildContext context) {
     final hight = MediaQuery.of(context).size.height;
-    final width = MediaQuery.of(context).size.width;
     return Scaffold(
       body: Center(
         child: Column(
@@ -57,9 +56,10 @@ class _GirisViewState extends State<GirisView> {
                 child: ElevatedButton(
                   onPressed: () {
                     final model=User(KullaniciKodu: kullaniciadi.text, Sifre: sifre.text);
-                    if(model.KullaniciKodu=='admin' && model.Sifre=='1266') {}
+                    
+                    if(model.KullaniciKodu=='admin' && model.Sifre=='1266') {Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => const PageRouter(),));}
                     {
-                      Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => const PageRouter(),));
+                      
                     }
 
                   },

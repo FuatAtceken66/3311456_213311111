@@ -33,7 +33,7 @@ class _AnaSayfaViewState extends State<AnaSayfaView> {
               return Card(
                 child: ListTile(
                   onTap: (){
-                    Navigator.push(context, MaterialPageRoute(builder: (context) => const BurcDetayView(),));
+                    Navigator.push(context, MaterialPageRoute(builder: (context) =>  BurcDetayView(model:veri.tumburclar[index]),),);
                   },
                   title: Image.asset(veri.tumburclar[index].BurcResmi,height: 100,),
                   subtitle: Padding(

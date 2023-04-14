@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:okulproje/view/giris_view.dart';
+import 'package:okulproje/view/acilis_view.dart';
 
 void main() {
   runApp(const MyWidget());
@@ -11,11 +11,11 @@ class MyWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      theme: ThemeData(fontFamily: GoogleFonts.poppins().fontFamily),
+    return  MaterialApp(
+       theme: ThemeData(fontFamily: GoogleFonts.poppins().fontFamily),
       debugShowCheckedModeBanner: false,
       title: 'Burç Uygulması',
-      home: GirisView(),
+      home: const AcilisView(),
     );
   }
 }
