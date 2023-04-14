@@ -27,8 +27,8 @@ class _AcilisViewState extends State<AcilisView> {
                 'https://img.freepik.com/premium-photo/zodiac-signs-horoscope-background-concept-fantasy-mystery_521059-7702.jpg?size=626&ext=jpg',
           ),
              _AcilisPage(
-            title: "Günlük Burç Yorumlarını İncele",
-            subtitle: "Uzman yorumcuların yorumlarına oturduğun yerden eriş",
+            title: "Burcum Ne?",
+            subtitle: "",
             imagePath:
                 'https://img.freepik.com/premium-vector/illustration-lined-art-mystic-background-phone-wallpaper_769955-686.jpg?w=740',
                 isButonActive: true,

@@ -1,4 +1,4 @@
-#Fri Apr 14 00:37:57 TRT 2023
+#Fri Apr 14 14:27:16 TRT 2023
 base.0=C\:\\Users\\H.ATCEKEN\\Desktop\\Proje\\3311456_213311111\\build\\app\\intermediates\\dex\\debug\\mergeDexDebug\\classes.dex
 renamed.0=classes.dex
 path.0=classes.dex

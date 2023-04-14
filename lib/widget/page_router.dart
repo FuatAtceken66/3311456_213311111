@@ -2,9 +2,12 @@ import 'package:flutter/material.dart';
 import 'package:okulproje/view/anasayfa_view.dart';
 import 'package:okulproje/view/burcsayfa_view.dart';
 
-class PageRouter extends StatefulWidget {
-  const PageRouter({super.key});
+import '../model/user_model.dart';
 
+class PageRouter extends StatefulWidget {
+  const PageRouter({super.key,required this.user});
+  final User user;
+   
   @override
   State<PageRouter> createState() => _PageRouterState();
 }
@@ -49,7 +52,7 @@ class _PageRouterState extends State<PageRouter> {
         onPageChanged: (value) {
           SayfaDegistir(value);
         },
-        children: const [AnaSayfaView(), BurcSayfaView()],
+        children:  [AnaSayfaView(user: widget.user,), const BurcSayfaView()],
       ),
     );
   }

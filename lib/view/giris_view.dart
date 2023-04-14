@@ -12,6 +12,7 @@ class GirisView extends StatefulWidget {
 }
 
 class _GirisViewState extends State<GirisView> {
+  TextEditingController ad=TextEditingController();
   TextEditingController kullaniciadi=TextEditingController();
   TextEditingController sifre =TextEditingController();
   @override
@@ -32,6 +33,15 @@ class _GirisViewState extends State<GirisView> {
             ),
             const SizedBox(
               height: 50,
+            ),
+            SizedBox(
+              width: 250,
+              child: TextField( controller: ad,
+                decoration: const InputDecoration(hintText: 'Adınızı Giriniz'),
+              ),
+            ),
+            const SizedBox(
+              height: 30,
             ),
              SizedBox(
               width: 250,
@@ -55,9 +65,9 @@ class _GirisViewState extends State<GirisView> {
                 width: 125,
                 child: ElevatedButton(
                   onPressed: () {
-                    final model=User(KullaniciKodu: kullaniciadi.text, Sifre: sifre.text);
+                    final model=User(KullaniciKodu: kullaniciadi.text, Sifre: sifre.text,Isim: ad.text);
                     
-                    if(model.KullaniciKodu=='admin' && model.Sifre=='1266') {Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => const PageRouter(),));}
+                    if(model.KullaniciKodu=='admin' && model.Sifre=='1266') {Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) =>  PageRouter(user: model),));}
                     {
                       
                     }
