@@ -40,7 +40,7 @@ class _BurcSayfaViewState extends State<BurcSayfaView> {
       tarih= await showDatePicker(context: context,
       initialDate: DateTime.now(),
       firstDate: DateTime(2023),
-      lastDate: DateTime.now());
+      lastDate: DateTime.2024());
       takvimcontroller.text=tarih.toString().substring(0,10);
       setState(() {
          
